@@ -24,6 +24,8 @@ string GetHello()
 	var helloFolder = new DirectoryInfo(Directory.GetCurrentDirectory());
 	var hellopath = Path.Combine(helloFolder.FullName, "hello.txt");
 
+	// check that file exists, otherwise it may result into HTTP ERROR CODE 500
+
 	// print to console absolute path (fullname)
 	Console.WriteLine($"Reading hello from :{hellopath}");
 
